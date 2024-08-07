@@ -1,0 +1,652 @@
+@font-face {
+  font-family: "josefinSans_font";
+  src: url("../assets/fonts/JosefinSans.ttf");
+}
+
+@font-face {
+  font-family: "quickSand_font";
+  src: url("../assets/fonts/Quicksand.ttf");
+}
+
+body {
+  overflow-x: hidden !important;
+  max-width: 1700px;
+  min-width: 350px;
+  margin: 0px auto !important;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.josefinSans_font {
+  font-family: "josefinSans_font", sans-serif !important;
+}
+
+.quickSand_font {
+  font-family: "quickSand_font", sans-serif !important;
+}
+
+header {
+  padding: 0px 5% !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  z-index: 1000;
+}
+
+footer {
+  margin-top: 60px;
+}
+
+.about_section_main,
+.skills_section,
+.education_section,
+.projects_section,
+.contact_section {
+  padding: 0px 5%;
+}
+
+header .navbar-collapse {
+  flex-grow: unset !important;
+}
+
+.nav_links a {
+  font-size: 21px;
+  color: #594c21;
+  padding: 10px 20px;
+}
+
+.nav_links a:hover {
+  background-color: #594c21;
+  color: white;
+}
+
+.home_section {
+  min-height: 640px;
+  max-height: fit-content;
+  padding: 50px 5% 0px 5%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.home_section .greeting_section {
+  width: auto;
+  margin-right: 3%;
+}
+
+.home_section .home_img {
+  flex: 1;
+}
+
+.home_img img {
+  animation: moveUpDown 4s ease infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+.home_section .greeting_section p {
+  line-height: 5.5rem;
+  font-size: 4rem;
+}
+
+.home_section .greeting_section p:nth-of-type(2) span {
+  font-size: 3.4rem;
+}
+
+.home_section .social_links li,
+.contact_section .social_links li {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin: 0px 10px;
+}
+
+.home_section .social_links li:hover {
+  background-color: black !important;
+}
+
+.home_section .social_links li:hover i {
+  color: white !important;
+}
+
+.contact_section .social_links li:hover {
+  background-color: gainsboro !important;
+}
+
+.contact_section .social_links li:hover i {
+  color: black !important;
+}
+
+.resume_btn {
+  min-width: 200px;
+  max-width: 200px;
+  padding: 15px 0px;
+  border: none;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 35px;
+  font-size: large;
+  border: 2px solid black;
+  font-weight: 500;
+  cursor: pointer !important;
+}
+
+.resume_btn:hover {
+  background-color: ghostwhite !important;
+  border-color: black !important;
+  color: black !important;
+}
+
+.typing-animation {
+  margin-left: 20px;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.09em solid black;
+  white-space: nowrap;
+  animation: typing 7s steps(20) infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  90% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.about_section_main > h1,
+.skills_section > h1,
+.education_section > h1,
+.projects_section > h1,
+.contact_section > h1 {
+  margin-top: 6rem;
+  border-bottom: 4px solid #ffc107 !important;
+  font-size: 50px;
+}
+
+.about_section_main .aboutSec_imgDiv img {
+  width: 80%;
+  background-size: cover;
+}
+
+.about_section_main .about_textSec {
+  width: 55%;
+}
+
+.meter {
+  height: 15px;
+  border-radius: 20px;
+  background: rgb(209, 209, 209);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.meter .progress {
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+  background-color: #594c21;
+  border-radius: 20px;
+}
+
+.skills_section ul,
+.education_section ul,
+.projects_section ul {
+  margin-top: 60px;
+}
+
+.skills_section ul > li {
+  width: calc(50% - 8px);
+  margin-bottom: 40px;
+}
+
+.skills_section .html_progressBar {
+  width: 95%;
+}
+
+.skills_section .css_progressBar {
+  width: 90%;
+}
+
+.skills_section .tailwind_progressBar,
+.skills_section .firebase_progressBar {
+  width: 80%;
+}
+
+.skills_section .js_progressBar {
+  width: 70%;
+}
+
+.skills_section .react_progressBar {
+  width: 75%;
+}
+
+.skills_section .skill_name_per h6 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: gray;
+  font-family: "quickSand_font", sans-serif;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.skills_section .skill_name_per h6:nth-of-type(1) {
+  color: black !important;
+}
+
+.education_section .education_logo > div {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  overflow: hidden !important;
+  margin-bottom: 20px;
+}
+
+.education_section .education_logo > div > img {
+  height: 90%;
+  width: 90%;
+  background-size: cover;
+}
+
+.projects_section ul > li {
+  min-height: 500px;
+  max-height: fit-content;
+  min-width: 410px;
+  max-width: 410px;
+  background-color: gainsboro;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 30px;
+  overflow: hidden !important;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px,
+    rgba(0, 0, 0, 0.32) 0px 2px 16px 0px;
+}
+
+.projects_section ul > li .projectUI_img_parentEl {
+  min-height: 265px;
+  max-height: 265px;
+  box-shadow: 0 1px 8px #807c80;
+}
+
+.projects_section ul > li .projectUI_img_parentEl > img {
+  object-fit: fill;
+}
+
+.projects_section ul > li .projectDetail_parentDiv {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.projects_section ul > li .projectDetail_parentDiv > .repo_live_links {
+  flex: 1;
+  align-items: end !important;
+}
+
+.projects_section ul > li .projectDetail_parentDiv h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+
+.projects_section ul > li .projectDetail_parentDiv p {
+  color: rgb(105, 105, 105);
+  font-size: 17px;
+  line-height: 23px;
+}
+
+.projects_section ul > li .repo_live_links > a {
+  background-color: #594c21;
+  color: white;
+  width: 50%;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "quickSand_font", sans-serif !important;
+  height: 55px;
+  font-weight: 500;
+}
+
+.projects_section ul > li .repo_live_links > a:nth-of-type(1) {
+  border-right: 1px solid gainsboro;
+}
+
+.projects_section ul > li .repo_live_links > a:nth-of-type(2) {
+  border-left: 1px solid gainsboro;
+}
+
+.projects_section ul > li .repo_live_links > a:hover {
+  color: #594c21;
+  background-color: ghostwhite;
+}
+
+.projects_section ul > li .repo_live_links > a:hover i {
+  color: #594c21 !important;
+}
+
+.projects_section ul > li:last-child {
+  margin-bottom: 0px !important;
+}
+
+.contact_section > p {
+  color: #807c80;
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+
+.contact_section .social_links li {
+  background-color: #594c21 !important;
+}
+
+.contact_section .main_contact_links a {
+  color: #594c21;
+  font-size: 23px;
+}
+
+.contact_section .main_contact_links a:hover {
+  color: #c99805;
+}
+
+@media only screen and (max-width: 1387px) {
+  header,
+  .home_section,
+  .skills_section,
+  .about_section_main,
+  .education_section,
+  .projects_section,
+  .contact_section {
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+  }
+
+  .home_section .greeting_section p {
+    line-height: 5.3rem;
+    font-size: 3.8rem;
+  }
+
+  .home_section .greeting_section p:nth-of-type(2) span {
+    font-size: 3.2rem;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  .home_section {
+    padding-left: 1%;
+    padding-right: 1%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  .about_section {
+    flex-direction: column;
+  }
+
+  .about_section_main .aboutSec_imgDiv {
+    flex: unset !important;
+    margin-top: 10px;
+  }
+
+  .about_section_main .aboutSec_imgDiv img {
+    width: 550px;
+  }
+
+  .about_section_main .about_textSec {
+    margin-top: 30px;
+    width: 80%;
+  }
+
+  .about_section_main > h1,
+  .skills_section > h1,
+  .education_section > h1,
+  .projects_section > h1,
+  .contact_section > h1 {
+    margin-top: 5rem;
+    margin-bottom: 0px !important;
+    font-size: 50px;
+  }
+
+  .home_section .home_img {
+    flex: unset;
+    width: 550px;
+  }
+
+  .home_section .greeting_section {
+    align-items: center;
+    margin-right: 0px;
+  }
+
+  .home_section .greeting_section p {
+    line-height: 80px;
+    font-size: 56px;
+  }
+
+  .home_section .greeting_section p:nth-of-type(2) span {
+    font-size: 43px;
+    margin-left: 13px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .nav_links li {
+    margin: 10px 0px;
+  }
+  .nav_links li:nth-of-type(1) {
+    margin-top: 30px;
+  }
+  .about_section_main .about_textSec {
+    width: 95%;
+  }
+  .skills_section ul {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .skills_section ul > li,
+  .education_section ul > li {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+  .education_section ul {
+    align-items: center;
+    justify-content: space-between !important;
+  }
+
+  .education_section ul > li:nth-of-type(1) {
+    justify-content: unset !important;
+  }
+
+  .education_section ul > li {
+    width: 45% !important;
+  }
+
+  .education_section ul > li h1 {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+
+  .education_section ul > li h6 {
+    font-size: 19px !important;
+  }
+
+  .education_section ul > li p {
+    font-size: 17px !important;
+  }
+
+  .contact_section .main_contact_links a {
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+  }
+
+  .contact_section > p {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header,
+  .home_section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .logo {
+    font-size: 25px !important;
+  }
+
+  .home_section .home_img {
+    width: 350px;
+  }
+
+  .home_section .greeting_section p {
+    line-height: 58px;
+    font-size: 34px;
+  }
+
+  .home_section .greeting_section p:nth-of-type(2) span {
+    font-size: 26px;
+  }
+
+  .home_section .social_links {
+    margin-top: 30px !important;
+  }
+
+  .home_section .social_links li {
+    width: 45px;
+    height: 45px;
+    margin: 0px 8px;
+  }
+
+  .about_section_main .aboutSec_imgDiv img {
+    width: 350px;
+  }
+
+  .about_section_main .about_textSec p {
+    font-size: 15px !important;
+  }
+
+  .about_section_main > h1,
+  .skills_section > h1,
+  .education_section > h1,
+  .projects_section > h1,
+  .contact_section > h1 {
+    margin-top: 4rem;
+    font-size: 40px;
+  }
+
+  .skills_section .skill_name_per h6 {
+    font-size: 15px;
+  }
+
+  .education_section ul {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .skills_section ul,
+  .education_section ul,
+  .projects_section ul,
+  .contact_section {
+    margin-top: 45px;
+  }
+  .education_section ul > li {
+    width: 100% !important;
+    align-items: start !important;
+  }
+
+  .education_section ul > li h1 {
+    font-size: 18px !important;
+  }
+
+  .education_section ul > li h6 {
+    font-size: 17px !important;
+  }
+
+  .education_section ul > li p {
+    font-size: 15px !important;
+  }
+
+  .projects_section ul > li {
+    min-height: 450px;
+    max-height: fit-content;
+    min-width: 335px;
+    max-width: 335px;
+    margin-left: 0px;
+    margin-bottom: 35px;
+    margin-right: 0px;
+  }
+
+  .projects_section ul > li .projectUI_img_parentEl {
+    min-height: 240px;
+    max-height: 240px;
+  }
+
+  .projects_section ul > li .projectDetail_parentDiv h1 {
+    font-size: 30px;
+  }
+
+  .projects_section ul > li .projectDetail_parentDiv p {
+    color: rgb(105, 105, 105);
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .projects_section ul > li .repo_live_links > a {
+    font-size: 12px;
+  }
+
+  .projects_section ul > li .repo_live_links > a i {
+    font-size: 20px !important;
+    margin-right: 10px !important;
+  }
+
+  .contact_section .main_contact_links {
+    flex-direction: column !important;
+    margin-top: 10px !important;
+  }
+
+  .contact_section .main_contact_links a:nth-of-type(1) {
+    margin: 0px 0px 10px 0px !important;
+    font-size: 20px !important;
+  }
+
+  .contact_section .main_contact_links a:nth-of-type(2) {
+    margin: 10px 0px 0px 0px !important;
+    font-size: 20px !important;
+  }
+
+  .contact_section > p {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 45px !important;
+  }
+
+  .contact_section .social_links {
+    margin-top: 30px !important;
+  }
+
+  .contact_section .social_links li {
+    margin: 0px 5px;
+  }
+}
